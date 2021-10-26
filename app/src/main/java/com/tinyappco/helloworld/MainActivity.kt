@@ -2,16 +2,21 @@ package com.tinyappco.helloworld
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import kotlinx.android.synthetic.main.activity_main.*
+import com.tinyappco.helloworld.databinding.ActivityMainBinding
+
 
 class MainActivity : AppCompatActivity() {
 
+    lateinit var binding: ActivityMainBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        val view = binding.root
+        setContentView(view)
 
-        btnGreet.setOnClickListener{
-            tvGreeting.text = getString(R.string.hello_android)
+        binding.btnGreet.setOnClickListener{
+            binding.tvGreeting.text = getString(R.string.hello_android)
         }
     }
 }
