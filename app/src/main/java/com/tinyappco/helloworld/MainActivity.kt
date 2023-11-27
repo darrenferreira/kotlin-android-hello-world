@@ -17,6 +17,8 @@ class MainActivity : AppCompatActivity() {
 
         binding.btnGreet.setOnClickListener{
             binding.tvGreeting.text = getString(R.string.hello_android)
+
+            // first change
         }
     }
 }
