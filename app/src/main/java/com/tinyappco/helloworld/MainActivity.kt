@@ -15,10 +15,9 @@ class MainActivity : AppCompatActivity() {
         val view = binding.root
         setContentView(view)
 
-        binding.btnGreet.setOnClickListener{
-            binding.tvGreeting.text = getString(R.string.hello_android)
+//        binding.btnGreet.setOnClickListener{
+//            binding.tvGreeting.text = getString(R.string.hello_android)
 
             // first change
         }
-    }
 }
