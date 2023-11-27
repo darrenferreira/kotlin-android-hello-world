@@ -30,7 +30,7 @@ class MainScreen : Fragment(R.layout.fragment_main_screen) {
         val login = view.findViewById<Button>(R.id.btnGreet)
 
         login.setOnClickListener {
-            buttonHandler(R.id.action_mainScreen_to_welcomeScreen, "The we4lcome screen :)")
+            buttonHandler(R.id.action_mainScreen_to_welcomeScreen, "The welcome screen :)")
         }
     }
 
