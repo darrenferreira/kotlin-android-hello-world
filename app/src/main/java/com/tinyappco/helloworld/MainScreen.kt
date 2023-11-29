@@ -33,7 +33,7 @@ class MainScreen : Fragment(R.layout.fragment_main_screen) {
         val password=view.findViewById<EditText>(R.id.UserPassword)
 
         login.setOnClickListener {
-            buttonHandler(R.id.action_mainScreen_to_welcomeScreen, "The welcome screen :)")
+            buttonHandler(R.id.action_mainScreen_to_welcomeScreen, "The welcome screen")
         }
     }
 
