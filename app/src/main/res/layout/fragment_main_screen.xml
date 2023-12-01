@@ -75,7 +75,7 @@
 
 
         <Button
-            android:id="@+id/btnGreet"
+            android:id="@+id/btnLogin"
             android:layout_width="350dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
@@ -86,7 +86,6 @@
             android:backgroundTint="@color/colorPrimary" />
 
     </LinearLayout>
-
 
 
 </FrameLayout>
