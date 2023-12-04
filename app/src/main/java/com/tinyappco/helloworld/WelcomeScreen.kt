@@ -9,14 +9,14 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 
 class WelcomeScreen : AppCompatActivity() {
-    lateinit var messageTV: TextView
+    lateinit var usernameMessage: TextView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.fragment_welcome_screen)
-        messageTV = findViewById(R.id.usernameText)
+        usernameMessage = findViewById(R.id.usernameText)
         // getting the bundle from the intent
         val bundle = intent.extras
-        messageTV.text = bundle!!.getString("message")
+        usernameMessage.text = bundle!!.getString("message")
 
     }
 }
