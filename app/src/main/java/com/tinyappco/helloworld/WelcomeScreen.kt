@@ -6,7 +6,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
-<<<<<<< HEAD
 
 class WelcomeScreen : Fragment() {
 
@@ -30,20 +29,6 @@ class WelcomeScreen : Fragment() {
 
         return view
     }
-=======
-import androidx.appcompat.app.AppCompatActivity
 
-class WelcomeScreen : AppCompatActivity() {
-    lateinit var messageTV: TextView
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.fragment_welcome_screen)
-        messageTV = findViewById(R.id.usernameText)
-        // getting the bundle from the intent
-        val bundle = intent.extras
-        messageTV.text = bundle!!.getString("message")
->>>>>>> 767e46b33894f4886e4c5b99185fadd60b36c13d
-
-    }
 }
 
