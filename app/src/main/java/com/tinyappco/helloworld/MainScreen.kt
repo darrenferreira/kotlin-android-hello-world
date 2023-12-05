@@ -28,23 +28,31 @@ class MainScreen : Fragment() {
         val password = view.findViewById<EditText>(R.id.UserPassword)
 
         login.setOnClickListener {
-            //buttonHandler(R.id.action_mainScreen_to_welcomeScreen, "The welcome screen")
-            val input = user.text.toString()
 
-            val bundle = Bundle()
-            bundle.putString(NAME, input)
+            if (user.text.isNotEmpty() && password.text.isNotEmpty()) {
+                //buttonHandler(R.id.action_mainScreen_to_welcomeScreen, "The welcome screen")
+                val input = user.text.toString()
 
-            //creating a variable to assign the welcome fragment
-            val fragment = WelcomeScreen()
-            fragment.arguments = bundle
+                val bundle = Bundle()
+                bundle.putString(NAME, input)
 
-            //taking data from the first fragment to second fragment
-            parentFragmentManager.beginTransaction().apply {
-                replace(R.id.fragmentContainerView, fragment).commit()
+                //creating a variable to assign the welcome fragment
+                val fragment = WelcomeScreen()
+                fragment.arguments = bundle
+
+                //taking data from the first fragment to second fragment
+                parentFragmentManager.beginTransaction().apply {
+                    replace(R.id.fragmentContainerView, fragment).commit()
+                }
             }
-
-
+            if(user.text.isEmpty()) {
+                user.error = "Please add text"
+            }
+            if(password.text.isEmpty()) {
+                password.error = "Please add text"
+            }
         }
+
         return view
     }
 }
