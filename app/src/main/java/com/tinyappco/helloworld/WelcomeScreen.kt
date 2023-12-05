@@ -19,7 +19,7 @@ class WelcomeScreen : Fragment() {
     ): View? {
 
         val view = inflater.inflate(R.layout.fragment_welcome_screen, container, false)
-        val returnButton = view.findViewById<Button>(R.id.btnBack)
+//        val returnButton = view.findViewById<Button>(R.id.btnBack)
 
         // Finds the TextView in the welcome fragment
         val myTextView = view.findViewById<TextView>(R.id.usernameText)
