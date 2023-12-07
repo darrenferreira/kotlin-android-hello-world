@@ -30,19 +30,23 @@ class MainScreen : Fragment() {
         login.setOnClickListener {
 
             if (user.text.isNotEmpty() && password.text.isNotEmpty()) {
-                //buttonHandler(R.id.action_mainScreen_to_welcomeScreen, "The welcome screen")
                 val input = user.text.toString()
 
                 val bundle = Bundle()
                 bundle.putString(NAME, input)
 
-                //creating a variable to assign the welcome fragment
                 val fragment = WelcomeScreen()
                 fragment.arguments = bundle
 
+<<<<<<< HEAD
                 //taking data from the first fragment to second fragment
                fragmentManager?.beginTransaction()?.replace(R.id.fragmentContainerView, fragment)?.commit()
 
+=======
+                parentFragmentManager.beginTransaction().apply {
+                    replace(R.id.fragmentContainerView, fragment).commit()
+                }
+>>>>>>> 1de3f04cca395697256e6737b2784c0ff4e84287
             }
             if(user.text.isEmpty()) {
                 user.error = "Please add text"
