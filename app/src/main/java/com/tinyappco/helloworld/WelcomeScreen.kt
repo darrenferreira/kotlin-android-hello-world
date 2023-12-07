@@ -19,25 +19,12 @@ class WelcomeScreen : Fragment() {
     ): View? {
 
         val view = inflater.inflate(R.layout.fragment_welcome_screen, container, false)
-//        val returnButton = view.findViewById<Button>(R.id.btnBack)
 
-        // Finds the TextView in the welcome fragment
         val myTextView = view.findViewById<TextView>(R.id.usernameText)
 
-        // Gets the data from the passed bundle
         val data = arguments
         val info = data?.getString(NAME)
         myTextView.text = info
-
-//        returnButton.setOnClickListener {
-//           // findNavController().navigate(R.id.action_welcomeScreen_to_mainScreen)
-//
-//            val bundle = Bundle()
-//            val fragment = MainScreen()
-//            fragment.arguments = bundle
-//
-//            println("returning")
-//        }
 
         return view
     }

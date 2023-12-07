@@ -21,8 +21,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="140dp"
-        android:text="Version: 3.53.0"
-        android:textSize="15dp"
+        android:text="@string/version"
+        android:textSize="15sp"
         android:textColor="@color/lightgrey"
         android:layout_gravity="center_horizontal"/>
 
@@ -31,8 +31,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="170dp"
-        android:text="Hello again"
-        android:textSize="35dp"
+        android:text="@string/hello_again"
+        android:textSize="35sp"
         android:textColor="@color/white"
         android:layout_gravity="center_horizontal"/>
 
@@ -49,8 +49,8 @@
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Sign In"
-            android:textSize="25dp"
+            android:text="@string/sign_in"
+            android:textSize="25sp"
             android:textColor="@color/black"
             android:layout_gravity="center"/>
 
@@ -60,7 +60,7 @@
             android:layout_height="50dp"
             android:layout_gravity="center_horizontal"
             android:ems="10"
-            android:hint="Username"
+            android:hint="@string/username"
             android:inputType="text" />
 
 
@@ -70,7 +70,7 @@
             android:layout_height="50dp"
             android:layout_gravity="center_horizontal"
             android:ems="10"
-            android:hint="Password"
+            android:hint="@string/password"
             android:inputType="numberPassword" />
 
 
@@ -80,10 +80,11 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:clickable="true"
-            android:text="Log-In"
-            android:textSize="15dp"
+            android:text="@string/log_in"
+            android:textSize="15sp"
             android:textColor="@color/white"
-            android:backgroundTint="@color/colorPrimary" />
+            android:backgroundTint="@color/colorPrimary"
+            android:focusable="true" />
 
     </LinearLayout>
 
