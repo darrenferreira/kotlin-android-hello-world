@@ -41,9 +41,8 @@ class MainScreen : Fragment() {
                 fragment.arguments = bundle
 
                 //taking data from the first fragment to second fragment
-                parentFragmentManager.beginTransaction().apply {
-                    replace(R.id.fragmentContainerView, fragment).commit()
-                }
+               fragmentManager?.beginTransaction()?.replace(R.id.fragmentContainerView, fragment)?.commit()
+
             }
             if(user.text.isEmpty()) {
                 user.error = "Please add text"
