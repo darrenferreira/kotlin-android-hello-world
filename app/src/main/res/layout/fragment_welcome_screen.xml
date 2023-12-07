@@ -19,13 +19,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="170dp"
-<<<<<<< HEAD
         android:text="@string/hello"
         android:textSize="35sp"
-=======
-        android:text="Welcome,"
-        android:textSize="35dp"
->>>>>>> 71fede861f5ff13393a6604d44f04f2760e0030b
         android:textColor="@color/colorPrimary"
         android:layout_gravity="center_horizontal"/>
 
