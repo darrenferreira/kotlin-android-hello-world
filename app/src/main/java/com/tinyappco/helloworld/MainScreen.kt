@@ -10,6 +10,7 @@ import android.widget.Button
 import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
+import com.google.android.material.bottomnavigation.BottomNavigationView
 
 
 class MainScreen : Fragment() {
@@ -54,4 +55,5 @@ class MainScreen : Fragment() {
 
         return view
     }
+
 }
