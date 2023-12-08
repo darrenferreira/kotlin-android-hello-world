@@ -88,5 +88,16 @@
 
     </LinearLayout>
 
+    <Button
+        android:id="@+id/btnCompose"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="530dp"
+        android:text="@string/compose"
+        android:textSize="15sp"
+        android:textColor="@color/colorPrimary"
+        android:backgroundTint="@color/white"
+        android:focusable="true" />
 
 </FrameLayout>
