@@ -1,15 +1,11 @@
 package com.tinyappco.helloworld
 
-import android.app.FragmentManager
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
 import android.widget.TextView
-import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
-import androidx.navigation.fragment.findNavController
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class WelcomeScreen : Fragment() {
@@ -30,19 +26,15 @@ class WelcomeScreen : Fragment() {
 
         val firstFragment=MainScreen()
         val secondFragment=WelcomeScreen()
-        val thirdFragment=HomeFragment()
+        val thirdFragment=ComposeFragment()
         val bottomNavigationView=view.findViewById<BottomNavigationView>(R.id.bottomNavigationView1)
 
         bottomNavigationView.setOnNavigationItemSelectedListener {
             when(it.itemId){
                 R.id.home->setCurrentFragment(thirdFragment)
-
-
-
             }
             true
         }
-
         return view
     }
     private fun setCurrentFragment(fragment1:Fragment)=

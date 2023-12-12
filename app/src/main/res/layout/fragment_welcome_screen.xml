@@ -58,22 +58,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:menu="@menu/bottom_nav_menu" />
 
-
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-
-<!--    <Button-->
-<!--        android:id="@+id/btnBack"-->
-<!--        android:layout_width="350dp"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_marginTop="300dp"-->
-<!--        android:layout_gravity="center_horizontal"-->
-<!--        android:clickable="true"-->
-<!--        android:text="Return to home page"-->
-<!--        android:textSize="15dp"-->
-<!--        android:textColor="@color/white"-->
-<!--        android:backgroundTint="@color/colorPrimary" />-->
 
