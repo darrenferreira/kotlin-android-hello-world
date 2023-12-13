@@ -26,7 +26,7 @@ class WelcomeScreen : Fragment() {
 
         val firstFragment=MainScreen()
         val secondFragment=WelcomeScreen()
-        val thirdFragment=ComposeFragment()
+        val thirdFragment=HomeScreen()
         val bottomNavigationView=view.findViewById<BottomNavigationView>(R.id.bottomNavigationView1)
 
         bottomNavigationView.setOnNavigationItemSelectedListener {
