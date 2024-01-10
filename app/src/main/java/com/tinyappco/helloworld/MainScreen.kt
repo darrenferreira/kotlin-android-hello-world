@@ -39,10 +39,8 @@ class MainScreen : Fragment() {
                 val fragment = WelcomeScreen()
                 fragment.arguments = bundle
 
-
                 //taking data from the first fragment to second fragment
                fragmentManager?.beginTransaction()?.replace(R.id.fragmentContainerView, fragment)?.commit()
-
 
             }
             if(user.text.isEmpty()) {
